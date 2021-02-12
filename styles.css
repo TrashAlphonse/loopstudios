@@ -111,7 +111,7 @@ header {
 .site-nav-mobile-list {
     display: flex;
     flex-direction: column;
-    padding-top: 100px;
+    padding-top: 70px;
 }
 
 .site-nav-mobile-list-item {
