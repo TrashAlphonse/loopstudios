@@ -200,9 +200,9 @@ header {
 .creations-gallery {
     grid-column: 1 / 5;
     margin-top: 5%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 10px;
 }
 
 .creations-gallery-card-title {
@@ -217,13 +217,13 @@ header {
 
 .creations-gallery-card {
     position: relative;
-    margin-bottom: 15px;
     cursor: pointer;
 }
 
 .creations-desktop-image {
     opacity: 1;
     transition: opacity .1s ease-in;
+    width: 100%;
 }
 
 .creations-gallery-card:hover > .creations-desktop-image {
@@ -346,13 +346,9 @@ footer .site-nav {
    /* Creations */
 
    #creations {
-       padding: 25% 10% 10%;
+       padding: 15% 10% 10%;
        text-align: center;
        grid-gap: 20px;
-   }
-
-   .creations-gallery {
-       justify-content: center;
    }
 
    .creations-heading {
