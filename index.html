@@ -18,7 +18,7 @@
 <body>
     <header>
       <div class="header-top">
-        <a href="/" class="logo"><img src="images/logo.svg" alt="logo"></a>
+        <a href="/" class="logo"><img src="/images/logo.svg" alt="logo"></a>
         <nav>
             <ul class="site-nav-list">
               <li class="site-nav-list-item">
@@ -45,7 +45,7 @@
         </nav>
 
         <!-- Nav Mobile-Open-Icon -->
-        <img class="nav-mobile-icon-open" src="images/icon-hamburger.svg" alt="Open menu">
+        <img class="nav-mobile-icon-open" src="/images/icon-hamburger.svg" alt="Open menu">
       
       </div>
   
@@ -53,8 +53,8 @@
 
       <nav class="site-nav-mobile">
         <div class="site-nav-mobile-top">
-          <a href="/"><img src="images/logo.svg" alt="logo"></a>
-          <img src="images/icon-close.svg" alt="Close" class="nav-mobile-icon-close">
+          <a href="/"><img src="/images/logo.svg" alt="logo"></a>
+          <img src="/images/icon-close.svg" alt="Close" class="nav-mobile-icon-close">
         </div>
         <ul class="site-nav-mobile-list">
           <li class="site-nav-mobile-list-item">
@@ -85,7 +85,7 @@
  
     <main>
       <section id="about">
-          <img src="images/desktop/image-interactive.jpg" alt="About us">
+          <img src="/images/desktop/image-interactive.jpg" alt="About us">
         <div class="about-text">
           <h2 class="about-heading">The leader in interactive VR</h2>
           <p class="about-comment">Founded in 2011, Loopstudios has been producing world-class virtual reality 
@@ -99,45 +99,59 @@
           <button class="main-btn">See All</button>
           <div class="creations-gallery">
               <div class="creations-gallery-card">
-                <!-- Desktop image -->
-                <img class="creations-desktop-image" src="images/desktop/image-deep-earth.jpg" alt="Deep Earth">
-                <!-- Mobile image -->
-                <img class="creations-mobile-image" src="images/mobile/image-deep-earth.jpg" alt="Deep Earth">
+                <picture class="creations-desktop-image">
+                  <source media="(max-width: 992px)" srcset="images/mobile/image-deep-earth.jpg">
+                  <img src="/images/desktop/image-deep-earth.jpg" alt="Deep Earth">
+                </picture>
                 <h3 class="creations-gallery-card-title">Deep <br> earth</h3>
               </div>
               <div class="creations-gallery-card">
-                <img class="creations-desktop-image" src="images/desktop/image-night-arcade.jpg" alt="Night arcade">
-                <img class="creations-mobile-image" src="images/mobile/image-night-arcade.jpg" alt="Night arcade">
+                <picture class="creations-desktop-image">
+                  <source media="(max-width: 992px)" srcset="images/mobile/image-night-arcade.jpg">
+                  <img src="/images/desktop/image-night-arcade.jpg" alt="night-arcade">
+                </picture>
                 <h3 class="creations-gallery-card-title">Night <br> arcade</h3>
               </div>
               <div class="creations-gallery-card">
-                <img  class="creations-desktop-image" src="images/desktop/image-soccer-team.jpg" alt="Soccer team VR">
-                <img class="creations-mobile-image" src="images/mobile/image-soccer-team.jpg" alt="Soccer team VR">
+                <picture class="creations-desktop-image">
+                  <source media="(max-width: 992px)" srcset="images/mobile/image-soccer-team.jpg">
+                  <img src="/images/desktop/image-soccer-team.jpg" alt="Soccer team VR">
+                </picture>
                 <h3 class="creations-gallery-card-title">Soccer <br> team VR</h3>
               </div>
               <div class="creations-gallery-card">
-                <img class="creations-desktop-image" src="images/desktop/image-grid.jpg" alt="The grid">
-                <img class="creations-mobile-image" src="images/mobile/image-grid.jpg" alt="The grid">
+                <picture class="creations-desktop-image">
+                  <source media="(max-width: 992px)" srcset="images/mobile/image-grid.jpg">
+                  <img src="/images/desktop/image-grid.jpg" alt="The grid">  
+                </picture>
                 <h3 class="creations-gallery-card-title"> The <br> grid</h3>
               </div>
               <div class="creations-gallery-card">
-                <img class="creations-desktop-image" src="images/desktop/image-from-above.jpg" alt="From up above VR">
-                <img class="creations-mobile-image" src="images/mobile/image-from-above.jpg" alt="From up above VR">
+                <picture class="creations-desktop-image">
+                  <source media="(max-width: 992px)" srcset="images/mobile/image-from-above.jpg">
+                  <img src="/images/desktop/image-from-above.jpg" alt="from-above">  
+                </picture>
                 <h3 class="creations-gallery-card-title">From up <br> above VR</h3>
               </div>
               <div class="creations-gallery-card">
-                <img class="creations-desktop-image" src="images/desktop/image-pocket-borealis.jpg" alt="Pocket borealis">
-                <img class="creations-mobile-image" src="images/mobile/image-pocket-borealis.jpg" alt="Pocket borealis">
+                <picture class="creations-desktop-image">
+                  <source media="(max-width: 992px)" srcset="images/mobile/image-pocket-borealis.jpg">
+                  <img src="/images/desktop/image-pocket-borealis.jpg" alt="pocket-borealis">  
+                </picture>
                 <h3 class="creations-gallery-card-title">Pocket <br> borealis</h3>
               </div>
               <div class="creations-gallery-card">
-                <img class="creations-desktop-image" src="images/desktop/image-curiosity.jpg" alt="The curiosity">
-                <img class="creations-mobile-image" src="images/mobile/image-curiosity.jpg" alt="The curiosity">
+                <picture class="creations-desktop-image" >
+                  <source media="(max-width: 992px)" srcset="images/mobile/image-curiosity.jpg">
+                  <img src="/images/desktop/image-curiosity.jpg" alt="curiosity">  
+                </picture>
                 <h3 class="creations-gallery-card-title">The <br> curiosity</h3>
               </div>
               <div class="creations-gallery-card">
-                <img class="creations-desktop-image" src="images/desktop/image-fisheye.jpg" alt="Make it fisheye">
-                <img class="creations-mobile-image" src="images/mobile/image-fisheye.jpg" alt="Make it fisheye">
+                <picture class="creations-desktop-image">
+                  <source media="(max-width: 992px)" srcset="images/mobile/image-fisheye.jpg">
+                  <img src="/images/desktop/image-fisheye.jpg" alt="fisheye">  
+                </picture>
                 <h3 class="creations-gallery-card-title">Make it <br> fisheye</h3>
               </div>
           </div>
@@ -146,7 +160,7 @@
 
     <footer>
       <div>
-      <img src="images/logo.svg" alt="logo">
+      <img src="/images/logo.svg" alt="logo">
       <nav class="site-nav">
           <ul class="site-nav-list">
             <li class="site-nav-list-item">
@@ -175,20 +189,20 @@
     <div>
       <div class="social-icons">
         <a class="social-icon" title="Facebook" href="#">
-          <img src="images/icon-facebook.svg" alt="Facebook">
+          <img src="/images/icon-facebook.svg" alt="Facebook">
           <span class="list-bottom-line"></span>
         </a>
         <a class="social-icon" title="Twitter" href="#">
-          <img src="images/icon-twitter.svg" alt="Twitter">
+          <img src="/images/icon-twitter.svg" alt="Twitter">
           <span class="list-bottom-line"></span>
         </a>
         <a class="social-icon" title="Pinterest" href="#">
           <span class="list-bottom-line"></span>
-          <img src="images/icon-pinterest.svg" alt="Pinterest">
+          <img src="/images/icon-pinterest.svg" alt="Pinterest">
         </a>
         <a class="social-icon" title="Instagram" href="#">
           <span class="list-bottom-line"></span>
-          <img src="images/icon-instagram.svg" alt="Instagram">
+          <img src="/images/icon-instagram.svg" alt="Instagram">
         </a>
       </div>
       <p class="copyright">© 2021 Loopstudios. All rights reserved.</p>
